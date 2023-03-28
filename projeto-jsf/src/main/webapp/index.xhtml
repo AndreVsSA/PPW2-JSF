@@ -10,10 +10,13 @@
     </h:head>
     <h:body>
         <h1>Bem Vindo ao Sistema</h1>
-        <h:inputText value="#{helloBean}"></h:inputText>
-        <p:commandButton value="Dizer ola"
-                         actionListener="#{helloBean.dizerOla()}"
-                         update="@form"></p:commandButton>
+        <h:form>
+            <h:inputText value="#{helloBean.nome}"></h:inputText>
+            <p:commandButton value="Dizer ola"
+                             actionListener="#{helloBean.dizerOla()}"
+                             update="@form"></p:commandButton>
+            <p:messages></p:messages>
+        </h:form>
     </h:body>
 </ui:composition>
 
