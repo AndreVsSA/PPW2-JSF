@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>Sistema Vendas</h1>
+        <p:menubar>
+            <p:menuitem value="Home" url="index.xhtml"></p:menuitem>
+            <p:submenu label="Cadastros">
+                <p:menuitem value="Usuário"></p:menuitem>
+                <p:menuitem value="Cliente"></p:menuitem>
+                <p:menuitem value="Produto"></p:menuitem>
+            </p:submenu>
+            <p:submenu label="Financiero">
+                <p:menuitem value="Fluxo de Caixa"></p:menuitem>
+            </p:submenu>
+            <p:submenu label="Relatórios">
+                <p:menuitem value="Movimento de Caixa"></p:menuitem>
+                <p:menuitem value="Itens em Estoque"></p:menuitem>
+                <p:menuitem value="Clientes"></p:menuitem>
+            </p:submenu>
+        </p:menubar>
+        <ui:insert>
+            
+        </ui:insert>
+        <p>
+            Sistema de vendas.
+        </p>
+    </h:body>
+</html>
